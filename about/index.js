@@ -6,7 +6,7 @@ const navMenu = document.createElement('div');
 const photoGrid = document.createElement('div');
 
 const toggle = () => navMenu.classList.toggle('hide');
-const loadGroup = i => () => location.hash = '#' + i;
+const loadGroup = i => () => (location.hash = '#' + i);
 
 const buttons = kelompok.map((name, index) => {
   let button = document.createElement('h1');
@@ -57,7 +57,7 @@ const makeDisplay = (profile, absen) => {
   [action, name].forEach(node => link.appendChild(node));
   [avatar, link].forEach(node => wrapper.appendChild(node));
   return wrapper;
-}
+};
 
 const updatePhotos = () => {
   while (photoGrid.hasChildNodes()) {
@@ -70,16 +70,16 @@ const updatePhotos = () => {
       photoGrid.appendChild(makeDisplay(profile, absen));
     }
   }
-}
+};
 
 const update = () => {
   id = parseInt(location.hash.slice(1)) || 0;
-  document.title = "About Us | " + kelompok[id];
+  document.title = 'About Us | ' + kelompok[id];
   toggle();
   setTimeout(updateMenu, 250);
-}
+};
 
-navBtn.addEventListener("click", toggle , false)
-navMenu.className = "list";
-photoGrid.className = "grid";
+navBtn.addEventListener('click', toggle, false);
+navMenu.className = 'list';
+photoGrid.className = 'grid';
 [navMenu, photoGrid].forEach(node => container.appendChild(node));

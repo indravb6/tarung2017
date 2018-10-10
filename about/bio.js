@@ -45,6 +45,6 @@ function prev(e) {
 function updateBio() {
   let id = location.hash.slice(1);
   let bio = data[id];
-  document.getElementById('foto').src = '/foto/' + id + '.jpg';
+  document.getElementById('foto').src = '../foto/' + id + '.jpg';
   loadBio(data[parseInt(id)]);
 }
