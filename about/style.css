@@ -1,0 +1,311 @@
+.photo {
+  object-fit: cover;
+  width: 100%;
+  height: 17em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  display: block;
+}
+
+.container {
+  margin-top: 2em;
+  padding: 1.25em 0 3em 0;
+  max-width: 56em;
+  background-color: #fff;
+  min-height: 98%;
+}
+
+.row {
+  max-width: 56em;
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+
+nav {
+  max-width: 54em;
+  margin: 0 auto;
+  margin-top: 0.75em;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-title {
+  flex: auto;
+  text-align: center;
+  padding-top: 0.125em;
+}
+
+.nav-btn {
+  flex: initial;
+  width: 2em;
+}
+
+nav h5 {
+  color: #444;
+  font-weight: 800;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  margin-top: -0.25em;
+  padding-top: 0.5rem;
+  padding-left: 1.125rem;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.circle:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #2e59f3;
+}
+
+.red {
+  background-color: #ff4438;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+li {
+  font-size: 1.1em;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+title {
+  padding-bottom: 12em;
+  display: inline;
+  font-size: 1.2em !important;
+}
+
+#cerita {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.big {
+  margin-bottom: 1em;
+}
+
+.avatar {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 56em;
+  margin: 1em auto 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 0.375em;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 216px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3em;
+  margin-bottom: 0em;
+  -webkit-margin-before: 0;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-size: 16px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(1, 56, 255, 0.62);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  transition: opacity 0.2s, visibility 0.2s;
+  padding-bottom: 0.25em;
+}
+
+.grid > .wrapper:nth-child(even) .description {
+  background: rgba(228, 21, 21, 0.62);
+}
+
+.wrapper:hover .description {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.wrapper:hover .avatar {
+  transform: scale(1.15);
+}
+
+.detail {
+  transition: 0.2s;
+  transform: translateY(24px);
+  padding: 0 16px 2px 8px;
+}
+
+.action {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.name {
+  font-size: 1.9em;
+}
+
+.small {
+  font-size: 1.6em;
+}
+
+.wrapper:hover .detail {
+  transform: translateY(0);
+}
+
+a:hover {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list {
+  max-height: 75%;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  color: #666;
+  width: fit-content;
+}
+
+h1:hover {
+  cursor: pointer;
+}
+
+.list > h1:nth-child(even):hover {
+  color: #fa382d;
+}
+
+.list > h1:hover {
+  color: #2e59f3;
+  margin-left: 0.25em;
+}
+
+.list > h1 {
+  transition: margin-left 0.2s;
+}
+
+.hide {
+  max-height: 0;
+}
+
+.grid {
+  margin-top: 0.5em;
+}
+@media (max-width: 575px) {
+  .name {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .small {
+    font-size: 1em;
+  }
+  .action {
+    font-size: 0.9em;
+  }
+  detail {
+    padding-left: 6px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, auto));
+    grid-gap: 0.25em;
+  }
+  .wrapper {
+    height: 160px;
+  }
+  body {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.75em;
+    margin-left: 8px;
+    margin-bottom: 1px;
+  }
+  .container {
+    padding: 1.5em 0;
+    border-radius: 0em;
+    margin-top: 0;
+  }
+  .row {
+    margin-top: 1em;
+  }
+  .circle {
+    border-radius: 0;
+    margin: 0;
+    margin-top: -0.25em;
+  }
+  .red,
+  .blue {
+    border-radius: 0;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  nav {
+    margin-top: 0;
+  }
+  .list > h1:hover {
+    margin-left: 0.5em;
+  }
+  .grid {
+    margin-top: 0.125em;
+  }
+}
