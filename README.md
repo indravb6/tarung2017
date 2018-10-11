@@ -11,3 +11,4 @@ Serang, Terjang, Menang
 - Muhammad Azhar Rais Zulkarnain
 - Bunga Amalia Kurniawati
 - Muhammad Yusuf Harahap
+- Reynaldo Wijaya Hendry
